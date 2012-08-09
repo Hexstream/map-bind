@@ -1,4 +1,4 @@
-(asdf:defsystem #:hexstream-project-template
+(asdf:defsystem #:map-bind
 
   :author "Jean-Philippe Paradis <hexstream@gmail.com>"
 
