@@ -18,4 +18,3 @@
     `(,@mapping-call-prologue
       (lambda ,lambda-list ,@body)
       ,@mapping-call-arguments)))
-
