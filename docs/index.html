@@ -86,7 +86,7 @@
 
       <section id="introduction">
 
-        <p><dfn><code class="common-lisp library macro operator">map-bind</code></dfn> is a macro that allows visual grouping of variables with their corresponding values (not necessarily 1:1) in calls to mapping operators when using an inline <code>lambda</code>.<br />It does so in a way that automatically supports virtually every existing and future mapping operator, all <a href="http://www.lispworks.com/documentation/HyperSpec/Body/26_glo_l.htm#lambda_list_keyword">lambda list keywords</a> and <code>funcall</code>/<code>apply</code>/<code>multiple-value-call</code> variations.</p>
+        <p><dfn><code class="relevant">map-bind</code></dfn> is a macro that allows visual grouping of variables with their corresponding values (not necessarily 1:1) in calls to mapping operators when using an inline <code>lambda</code>.<br />It does so in a way that automatically supports virtually every existing and future mapping operator, all <a href="http://www.lispworks.com/documentation/HyperSpec/Body/26_glo_l.htm#lambda_list_keyword">lambda list keywords</a> and <code>funcall</code>/<code>apply</code>/<code>multiple-value-call</code> variations.</p>
 
         <p>It does all this with a surprisingly simple <a href="https://github.com/Hexstream/map-bind/blob/master/main.lisp">implementation</a>!</p>
 
@@ -99,7 +99,7 @@
 
         <div class="scroll">
 
-          <pre class="example"><code class="common-lisp">(<code class="common-lisp library operator">map-bind</code> (<span class="prologue"><code>multiple-value-call</code> #'map 'vector</span>)
+          <pre class="example"><code class="common-lisp">(<code class="relevant">map-bind</code> (<span class="prologue"><code>multiple-value-call</code> #'map 'vector</span>)
     ((<span class="arg"><var>symbol</var></span> <span class="val">#(a b c)</span>)
      (<span class="arg"><var>number</var></span> <span class="val">'(1 2 3)</span>)
      ((<span class="arg">&amp;rest <var>others</var> &amp;key &amp;allow-other-keys</span>) <span class="val">(values '(d e f) #(4 5 6))</span>)
@@ -114,13 +114,13 @@
                      <span class="val">#(a b c)</span>
                      <span class="val">'(1 2 3)</span>
                      <span class="val">(values '(d e f) #(4 5 6))</span>)
-=>
+=&gt;
 <samp>#((0 A 11 (4 D)) (1 B 12 (5 E)) (2 C 13 (6 F)))</samp>
 </code></pre>
 
         </div>
 
-        <p><b>To use <code class="common-lisp library operator">map-bind</code>, simply <code>(:import-from #:map-bind #:map-bind)</code>. Don't <code>(:use)</code>!</b></p>
+        <p><b>To use <code class="relevant">map-bind</code>, simply <code>(:import-from #:map-bind #:map-bind)</code>. Don't <code>(:use)</code>!</b></p>
 
       </section>
 
