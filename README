@@ -1,13 +1,12 @@
+Project's home: https://www.hexstreamsoft.com/libraries/map-bind/
+
+
 MAP-BIND is a macro that allows visual grouping of variables with
 their corresponding values (not necessarily 1:1) in calls to mapping
 operators when using an inline LAMBDA. It does so in a way that
 automatically supports virtually every existing and future mapping
 operator, all lambda keywords and FUNCALL/APPLY/MULTIPLE-VALUE-CALL
 variations.
-
-
-Documentation is available online at the project's home:
-https://www.hexstreamsoft.com/libraries/map-bind/
 
 
 This library is in the Public Domain.
